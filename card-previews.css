@@ -1,0 +1,12 @@
+/* One short artwork sequence per visit to a project card. */
+.work-card .work-art{user-select:none;-webkit-user-select:none}
+.work-preview-frame[data-preview-frame="2"]{display:none}
+.work-card.preview-ready .work-art>.work-preview-frame{display:block;position:absolute;inset:0;width:100%;height:100%;padding:0;object-fit:contain;opacity:0;transform:none;pointer-events:none;transition:opacity .24s ease;z-index:1}
+.work-card.preview-ready .work-art.packaging>.work-preview-frame{padding:22px}
+.work-card.preview-ready .work-art>.work-preview-frame[data-preview-current="true"]{opacity:1}
+.work-card.preview-ready .work-open{display:flex;z-index:3;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .3s ease,transform .3s ease;background:var(--paper);color:var(--ink);box-shadow:0 3px 20px rgba(20,25,17,.12);padding:14px 20px;gap:28px}
+.work-card.preview-ready[data-preview-phase="complete"] .work-open{opacity:1;transform:none}
+.work-card.preview-ready[data-preview-phase="complete"] .work-open>span{transform:translate(2px,-2px)}
+.work-card .work-art>.work-preview-frame[data-preview-src]{display:none!important}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.work-card.preview-ready .work-art>.work-preview-frame:not([data-preview-frame="0"]){display:none!important}}
+@media(prefers-reduced-motion:reduce){.work-card.preview-ready .work-art>.work-preview-frame,.work-card.preview-ready .work-open{transition:none!important;transform:none!important}}

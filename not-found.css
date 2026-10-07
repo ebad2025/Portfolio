@@ -1,0 +1,9 @@
+/* A quiet recovery page using the portfolio's existing type and palette. */
+.not-found-brand{font-size:18px;font-weight:600;letter-spacing:-.035em}
+.not-found{padding-block:clamp(60px,10vh,120px);max-width:1100px}
+.not-found h1{font-size:clamp(64px,10vw,138px);line-height:.98;letter-spacing:-.055em;margin-block:24px 30px}
+.not-found>p:not(.eyebrow){max-width:470px;font-size:18px;line-height:1.7;color:var(--muted)}
+.not-found>.text-link{margin-top:22px;font-size:16px}
+.not-found-collections{display:flex;flex-wrap:wrap;gap:18px 32px;border-top:1px solid var(--line);padding-top:28px;margin-top:64px;font-size:15px;line-height:1.7}
+.not-found-collections a{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:520px){.not-found-collections{flex-direction:column;gap:14px}.not-found h1{font-size:clamp(58px,17vw,82px)}}
